@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<script>
+	var page = "";
+	var width = window.innerWidth || document.documentElement.clientWidth
+			|| document.body.clientWidth;
+
+	var height = window.innerHeight || document.documentElement.clientHeight
+			|| document.body.clientHeight;
+	if (page == "" && width < height)
+		location.href = location.href + '?pm=1';
+</script>
+<head>
+<title>여자친구</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="b5tdmt-O_400x400.png"
+	type="image/x-icon">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+header, #content, footer {
+	width: 1024px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.button {
+	float: right;
+}
+.mySlides {
+	width: 100%;
+	max-height: 552px
+}
+table {width: 60%;
+	margin: 0 auto;
+		overflow: hidden;
+		height: 10%;
+	background-color: yellow;
+}
+th {padding:10px;height: 50px;
+	border: 1px solid #444444;
+}
+</style>
+</head>
+<body>
+	<header>
+		<h1 class="w3-center">여자친구 팬클럽</h1>
+				<div class="button">
+			<button type="button" onclick="location.href='log_in.html'">로그인</button>
+			<button type="button" onclick="location.href='member_join.html'">회원가입</button>
+		</div>
+		<div id="logo">
+<img src="b5tdmt-O_400x400.png" width="40px"
+					height="40px">
+			</div>
+	</header>
+	<div class="w3-content w3-section">
+		<img class="mySlides" src="20161119_여자친구_멜론뮤직어워드.jpg">
+			<img class="mySlides" src="20160821.jpg">
+			<img class="mySlides" src="Fever.jpg">
+			<img class="mySlides" src="b.jpg">
+			<img class="mySlides"			src="180506_아시아모델어워즈_여친.jpg">
+			<img			class="mySlides" src="0801_쇼케이스.jpg">
+			<img			class="mySlides" src="72.jpg">
+			<img			class="mySlides" src="20180430.jpg">
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if (myIndex > x.length) {
+				myIndex = 1
+			}
+			x[myIndex - 1].style.display = "block";
+			setTimeout(carousel, 2000);
+			// Change image every 2 seconds
+		}
+	</script>
+	<div class=table>
+		<table>
+				<thead>
+			<tr>
+				<th><a href="https://www.google.com/search?q=Umji">엄지</a>  </th>
+				<th><a href="https://www.google.com/search?q=Sowon">소원</a>  </th>
+				<th><a href="https://www.google.com/search?q=Yerin">예린</a> </th>
+				<th><a href="https://www.google.com/search?q=Eunha">은하</a> </th>
+				<th><a href="https://www.google.com/search?q=Yuju">유주</a> </th>
+				<th><a href="https://www.google.com/search?q=SinB">신비</a> </th>
+							</tr>
+		</thead>
+	</table></div>
+</body>
+</html>
